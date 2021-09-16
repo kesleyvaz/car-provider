@@ -24,10 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         with(binding) {
             btFastCar.setOnClickListener {
-                startActionsWith(CarFactory.getPerson(CarType.FAST))
+                startActionsWith(CarFactory.getCar(CarType.FAST))
             }
             btSlowCar.setOnClickListener {
-                startActionsWith(CarFactory.getPerson(CarType.SLOW))
+                startActionsWith(CarFactory.getCar(CarType.SLOW))
             }
             btStopCar.setOnClickListener {
                 timer.cancel()
